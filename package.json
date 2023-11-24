@@ -1,0 +1,45 @@
+{
+  "name": "generator-pipeline",
+  "version": "1.0.0",
+  "description": "Pipe is a TypeScript utility for elegantly handling operations on iterable sequences. It supports chainable methods like 'where', 'each', 'take', and 'all', facilitating efficient and expressive data processing in a functional style.",
+  "author": {
+    "name": "Axel SHAÏTA",
+    "email": "shaita.axel@gmail.com",
+    "url": "https://www.codeheroes.fr"
+  },
+  "license": "MIT",
+  "keywords": [
+    "generator",
+    "pipe",
+    "pipeline"
+  ],
+  "main": "dist/Pipe.js",
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/Pipe.ts --bundle --platform=node --outfile=dist/Pipe.js --format=esm",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arkerone/generator-pipeline"
+  },
+  "bugs": {
+    "url": "https://github.com/arkerone/generator-pipeline/issues"
+  },
+  "homepage": "https://github.com/arkerone/generator-pipeline#readme",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.11.0",
+    "esbuild": "^0.19.5",
+    "eslint": "^8.53.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-standard-with-typescript": "^39.1.1",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-n": "^16.3.1",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "^3.1.0",
+    "typescript": "^5.2.2"
+  }
+}
